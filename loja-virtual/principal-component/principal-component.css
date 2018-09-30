@@ -1,0 +1,65 @@
+.reticiencias {
+  white-space: nowrap;
+  width: 100%;                   
+  overflow: hidden; 
+  text-overflow:    ellipsis;
+}
+
+ul {
+    margin-top: -1pc;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.produto-imagem {
+    width: 50px;
+    margin: 0 0 5px 0;
+}
+
+.alinhamento-numerico {
+    text-align: right;
+}
+
+.alinhamento-acao {
+    text-align: center;
+}
+
+td { 
+    vertical-align: middle !important;
+}
+
+.fixed-top {
+    position: fixed;
+}
+
+.estrelas {
+    width: 92px;
+    height: 16px;
+    background: url(https://static.kabum.com.br/conteudo/temas/001/imagens/icones/estrelas.jpg) no-repeat;
+    margin: 10px 0;
+    background-position: 0px -80px;
+}
+
+.preco {
+    font-weight: bold;
+    width: 143px;
+    font-size: 26px;
+    color: #2C6ED0;
+    margin: 0;
+    text-align: left;
+}
+
+.espaco-icone {
+    margin-right: 2px;
+}

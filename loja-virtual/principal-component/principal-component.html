@@ -1,0 +1,526 @@
+﻿<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <title>KaBoM!</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="principal-component.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="../principal-component/principal-component.html">KaBoM!</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../principal-component/principal-component.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../sobre-component/sobre-component.html">Sobre</a>
+                </li>
+            </ul>
+            <div class="my-2 my-lg-0">
+                <button class="btn btn-outline-light my-2 my-sm-0">
+                    <i class="fas fa-user-circle espaco-icone"></i>
+                    <span>Entrar | Registrar</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container" style="margin-top: 70px;">
+        <h3><i class="fas fa-shopping-cart"></i> Produtos</h3>
+        <hr>
+        <div class="row">
+            <div class="card-group">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header reticiencias">
+                            Processador Intel Core i7-7700 Kaby Lake 7a Geração, Cache 8MB, 3.6GHz (4.2GHz Max Turbo),
+                            LGA 1151 Intel HD Graphics BX80677I77700
+                        </div>
+                        <div class="carousel slide" id="carouselControls1" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img id="produtoImagem1" class="d-block center" src="../assets/img/produto_1_1.jpg">
+                                </div>
+                                <div class="carousel-item center">
+                                    <img class="d-block center" src="../assets/img/produto_1_2.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block center" src="../assets/img/produto_1_3.jpg">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselControls1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselControls1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="produtoDescricao1">Processador Intel Core i7-7700 Kaby Lake 7a
+                                Geração</h5>
+                            <p class="card-text">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span id="produtoInformacao1">
+                                            Cache 8MB, 3.6GHz (4.2GHz Max Turbo), LGA 1151 Intel HD
+                                            Graphics BX80677I77700
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="estrelas"></div>
+                                        <small>De R$ 2.100,00 por</small>
+                                        <div class="preco" id="produtoValor1">R$ 1.851,00</div>
+                                    </div>
+                                </div>
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <a href="#" data-toggle="modal" data-target="#modalProduto1" class="btn btn-primary"
+                                        style="margin-bottom: +1pc;">
+                                        <i class="fas fa-info-circle espaco-icone"></i>
+                                        <span>Detalhes</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col-lg-12">
+                                    <a href="#" class="btn btn-success" onclick="adicionaProdutoAoCarrinho(1)">
+                                        <i class="fas fa-cart-plus espaco-icone"></i>
+                                        <span>Adicionar ao carrinho</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header reticiencias">
+                            Placa de Vídeo VGA NVIDIA ASUS GEFORCE GTX 1050 TI 4GB GDDR5 CERBERUS-GTX1050TI-O4G
+                            90YV0A74-M0NA00
+                        </div>
+                        <div class="carousel slide" id="carouselControls2" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img id="produtoImagem2" class="d-block center" src="../assets/img/produto_2_1.jpg">
+                                </div>
+                                <div class="carousel-item center">
+                                    <img class="d-block center" src="../assets/img/produto_2_2.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block center" src="../assets/img/produto_2_3.jpg">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselControls2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselControls2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="produtoDescricao2">Placa de Vídeo VGA NVIDIA ASUS GEFORCE GTX
+                                1050 TI 4GB</h5>
+                            <p class="card-text">
+                                <div class="row" style="min-height: 72px;">
+                                    <div class="col-lg-12">
+                                        <span id="produtoInformacao2">
+                                            GDDR5 CERBERUS-GTX1050TI-O4G 90YV0A74-M0NA00
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="estrelas"></div>
+                                        <small>De R$ 1.780,00 por</small>
+                                        <div class="preco" id="produtoValor2">R$ 1.376,00</div>
+                                    </div>
+                                </div>
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <a href="#" data-toggle="modal" data-target="#modalProduto2" class="btn btn-primary"
+                                        style="margin-bottom: +1pc;">
+                                        <i class="fas fa-info-circle espaco-icone"></i>
+                                        <span>Detalhes</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col-lg-12">
+                                    <a href="#" class="btn btn-success" onclick="adicionaProdutoAoCarrinho(2)">
+                                        <i class="fas fa-cart-plus espaco-icone"></i>
+                                        <span>Adicionar ao carrinho</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header reticiencias">
+                            Monitor LG 29 Full HD IPS LED UltraWide 21:9 HDMI Preto - 29UM68-P
+                        </div>
+                        <div class="carousel slide" id="carouselControls3" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img id="produtoImagem3" class="d-block center" src="../assets/img/produto_3_1.jpg">
+                                </div>
+                                <div class="carousel-item center">
+                                    <img class="d-block center" src="../assets/img/produto_3_2.jpg">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block center" src="../assets/img/produto_3_3.jpg">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselControls3" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselControls3" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="produtoDescricao3">Monitor LG 29 Full HD IPS LED UltraWide
+                                21:9</h5>
+                            <p class="card-text">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span id="produtoInformacao3">
+                                            A tela FHD 21:9 UltraWide (2560x1080) oferece conforto visual e garante
+                                            a sua melhor experiência de visualização.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="estrelas"></div>
+                                        <small>De R$ 1.835,00 por</small>
+                                        <div class="preco" id="produtoValor3">R$ 1.411,00</div>
+                                    </div>
+                                </div>
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <a href="#" data-toggle="modal" data-target="#modalProduto3" class="btn btn-primary"
+                                        style="margin-bottom: +1pc;">
+                                        <i class="fas fa-info-circle espaco-icone"></i>
+                                        <span>Detalhes</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col-lg-12">
+                                    <a href="#" class="btn btn-success" onclick="adicionaProdutoAoCarrinho(3)">
+                                        <i class="fas fa-cart-plus espaco-icone"></i>
+                                        <span>Adicionar ao carrinho</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h3><i class="fas fa-shopping-basket"></i> Carrinho de compras</h3>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <table id="carrinho" class="table table-bordered table-hover">
+                    <thead style="background-color: #dfdfdf">
+                        <tr>
+                            <th style="width: 55%">Produtos</th>
+                            <th style="width: 5%">Quantidade</th>
+                            <th style="width: 15%">Unitário</th>
+                            <th style="width: 15%">Total</th>
+                            <th style="width: 10%">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="carrinhoVazio" colspan="5">Carrinho vazio</td>
+                        </tr>
+                    </tbody>
+                    <tfoot style="background-color: #dfdfdf">
+                        <tr>
+                            <th colspan="5">
+                                <span>Valor total: </span>
+                                <span id="valorTotalCompra" style="float: right;">0</span>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <button class="btn btn-success" style="float: right; margin-bottom: 25px;" onclick="finalizaCompra()">
+            <i class="fas fa-save espaco-icone"></i>
+            <span>Finalizar compras</span>
+        </button>
+    </div>
+
+    <div class="modal fade" id="modalProduto1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Características</h5>
+                    <ul>
+                        <li>Marca: Intel</li>
+                        <li>Modelo: BX80677I777</li>
+                    </ul>
+                    <h5>Especificações</h5>
+                    <ul>
+                        <li>Kaby Lake</li>
+                        <li>Core i7-7700</li>
+                        <li>7ª Geração</li>
+                        <li>Status: Roadmap</li>
+                        <li>Livre de Conflito</li>
+                        <li>Soquetes suportados: FCLGA1151</li>
+                        <li>Trusted Execution Technolog</li>
+                        <li>Litografia: 14 nm</li>
+                        <li>Modo de operação 64 Bit</li>
+                    </ul>
+                    <h5>Performance</h5>
+                    <ul>
+                        <li>Cores: 4</li>
+                        <li>Tópicos: 8</li>
+                        <li>Frequência de Base: 3.60 GHz</li>
+                        <li>Frequência Turbo máx: 4,20 GHz</li>
+                        <li>Cache: 8MB</li>
+                        <li>Velocidade Bus: 100 MHz DMI</li>
+                        <li>TDP: 65W</li>
+                    </ul>
+                    <h5>Memória</h5>
+                    <ul>
+                        <li>Tamanho máximo de memória (depende do tipo de memória: 64GB</li>
+                        <li>Número máx. de canais de memória: 2</li>
+                    </ul>
+                    <h5>Gráficos</h5>
+                    <ul>
+                        <li>Processador Gráfico: Gráficos Intel® HD 630</li>
+                        <li>Frequência da base de Gráficos: 350,00 MHz</li>
+                        <li>Frequência Dinãmica máx. de gráficos: 1,15GHz</li>
+                        <li>Memória Máxima de Video gráfico: 64GB</li>
+                        <li>Suporta 4K: a 60Hz</li>
+                        <li>Resolução Máxima (HDMI 1.4): 4096x2304 @ 24Hz</li>
+                        <li>Resolução máxima (DP): 4096x2304 @ 60Hz</li>
+                        <li>Resolução máx. (eDP) - Painel Integrado): 4096x2304 @ 60Hz</li>
+                        <li>Suporte para DirecX: 12</li>
+                        <li>Suporte OpenGL: 4.4</li>
+                        <li>Monitores compatíveis: 3</li>
+                    </ul>
+                    <h5>Opções de expansão</h5>
+                    <ul>
+                        <li>Ecalabilidade: 1S Somente</li>
+                        <li>Revisão PCI Express: 3,0</li>
+                        <li>Configurações PCI Express: Até 1x16, 2x8, 1x8 + 2x4</li>
+                        <li>Núm máx de PCI Express Lanes: 16</li>
+                    </ul>
+                    <h5>Tecnologias Avançadas</h5>
+                    <ul>
+                        <li>Intel® Virtualization Technology (VT-x)</li>
+                        <li>Intel® Hyper-Threading Technology</li>
+                        <li>Proteção do SO</li>
+                        <li>Extensões de conjunto de instruções: SSE4.1 / 4.2, AVX 2.0</li>
+                        <li>Tecnologia Intel Turbo Boost: 2.0</li>
+                    </ul>
+                    <h5>Conteúdo da embalagem</h5>
+                    <ul>
+                        <li>01 Processador Intel Core i7-7700 Kaby Lake 7ª Geração</li>
+                        <li>01 Cooler</li>
+                    </ul>
+                    <br />
+                    Garantia: 12 meses de garantia
+                    <br />
+                    Peso: 275 gramas (bruto com embalagem)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProduto2" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Características</h5>
+                    <ul>
+                        <li>Marca: ASUS</li>
+                        <li>Modelo: CERBERUS-GTX1050TI-O4G</li>
+                    </ul>
+                    <h5>Especificações</h5>
+                    <h5>Gráficos</h5>
+                    <ul>
+                        <li>NVIDIA GeForce GTX 1050 TI</li>
+                        <li>CUDA: 768</li>
+                    </ul>
+                    <h5>Interface</h5>
+                    <ul>
+                        <li>PCI Express 3.0</li>
+                    </ul>
+                    <h5>Memória</h5>
+                    <ul>
+                        <li>Tipo: GDDR5</li>
+                        <li>Capacidade: 4GB</li>
+                        <li>Clock: 7008 Mhz</li>
+                        <li>Interface: 128 bits</li>
+                    </ul>
+                    <h5>Clock</h5>
+                    <ul>
+                        <li>OC Mode - GPU Boost Clock: 1480 MHz , GPU Base Clock: 1366 MHz</li>
+                        <li>Gaming Mode (Default) - GPU Boost Clock: 1455 MHz , GPU Base Clock: 1341 MHz</li>
+                    </ul>
+                    <h5>Resoluções</h5>
+                    <ul>
+                        <li>Digital: 7680x4320 (máxima)</li>
+                    </ul>
+                    <h5>Portas</h5>
+                    <ul>
+                        <li>1x Saída DVI: Nativo (DVI-D)</li>
+                        <li>1x Saída HDMI: Nativo (HDMI 2.0)</li>
+                        <li>1x Display Port: Nativo (DP regular)</li>
+                        <li>Suporte HDCP</li>
+                    </ul>
+                    <h5>Recursos</h5>
+                    <ul>
+                        <li>OpenGL 4.5</li>
+                        <li>ASUS GPU Tweak II & Driver</li>
+                    </ul>
+                    <h5>Físico</h5>
+                    <ul>
+                        <li>Dimensões: 20.3 x 11.5 x 3.8 cm</li>
+                    </ul>
+                    <h5>Conteúdo da Embalagem</h5>
+                    <ul>
+                        <li>Placa de Video ASUS</li>
+                        <li>CD de Instalação</li>
+                        <li>Guia Rápido</li>
+                    </ul>
+                    <br />
+                    Garantia: 12 meses de garantia
+                    <br />
+                    Peso: 765 gramas (bruto com embalagem)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProduto3" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Características</h5>
+                    <ul>
+                        <li>Marca: LG</li>
+                        <li>Modelo: 29UM68-P</li>
+                    </ul>
+                    <h5>Especificações</h5>
+                    <ul>
+                        <li>Tamanho da tela (Polegadas): 29</li>
+                        <li>Tipo painelLED IPS</li>
+                        <li>Ráio de aspecto: 21:9</li>
+                        <li>Resolução Nativa: 2560 x 1080</li>
+                        <li>Brilho: 250 cd/m2</li>
+                        <li>Ráio de Contraste: 1.000:1</li>
+                        <li>Tempo de resposta (ms): 5ms GTG</li>
+                        <li>Ângulo de Visão178º / 178º</li>
+                        <li>Conexão: HDMI / Display Port</li>
+                        <li>Taxa de atualização: 75 hz</li>
+                    </ul>
+                    <h5>Potência</h5>
+                    <ul>
+                        <li>Consumo Normal: 56.5W</li>
+                        <li>Potência de energia - Sleep Mode (max): 0.5W</li>
+                    </ul>
+                    <h5>Dimensões aproximadas (mm)</h5>
+                    <ul>
+                        <li>Com suporte: 702.5 x 204.7 x 414 mm</li>
+                        <li>Sem suporte: 702.5 x 63.8 x 328.4 mm</li>
+                    </ul>
+                    <h5>Certificados</h5>
+                    <ul>
+                        <li>EPA6.0</li>
+                        <li>EPEAT: Gold</li>
+                        <li>FCC-B</li>
+                        <li>TCO 6.0</li>
+                        <li>TUV-Type</li>
+                        <li>UL(cUL)</li>
+                    </ul>
+                    <h5>Alimentação</h5>
+                    <ul>
+                        <li>Tipo: Adaptador</li>
+                        <li>Entrada: 10 ~240V</li>
+                        <li>Configurações PCI Express: Até 1x16, 2x8, 1x8 + 2x4</li>
+                        <li>Núm máx de PCI Express Lanes: 16</li>
+                    </ul>
+                    <h5>Conteúdo da embalagem</h5>
+                    <ul>
+                        <li>01 Monitor LG 29 Full HD IPS LED UltraWide 21:9</li>
+                        <li>01 Cabo de Força</li>
+                        <li>01 Manual do usuário</li>
+                    </ul>
+                    <br />
+                    Garantia: 12 meses de garantia
+                    <br />
+                    Peso: 7075 gramas (bruto com embalagem)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://unpkg.com/currency.js@~1.2.0/dist/currency.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="principal-component.js"></script>
+</body>
+
+</html>
